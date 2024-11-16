@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/20503657ac.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Y<span>ASH</span></h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+                <div class="header-text">
+                    <p><span class="text"></span></p>
+                    <h2>Hello, I'm <span> Yash </span><br>An engineer <span>with</span><br> a passion for innovation</h2>
+                </div>
+                
+            <script src="script.js"></script>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="yash_photo.png">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>I'm Yash, I can tackle any task as a fresh engineer known for delivering high-quality solutions in Web Designing. With a strategic mindset and commitment to innovation, I thrive in dynamic environments. Continuously learning and embracing emerging technologies, I bring a results-oriented approach to every project, fostering collaboration and achieving shared goals.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Front-end Developer</li>
+                            <li><span>Java Developer</span><br>Designing Web,DSA</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Currently</span><br>Fresh Beginner</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Current</span><br>Pursuing BE from VPKBIET Baramati.</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div>
+                <i class="fa-solid fa-code"></i>
+                <h3>Front-End Web Design</h3>
+                <p>Transform your digital vision into reality with our Front-End Web Design services, combining the latest design trends, optimal usability, and performance for a standout online presence.</p>
+                <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h3>Java Developer</h3>
+                    <p>I bring a wealth of experience in designing and implementing robust, scalable, and efficient Java-based applications</p>
+                    <a href="#">learn more</a>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <i class="fa-solid fa-calculator"></i>
+                    <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>Experience the future of calculations at your fingertips</p>
+                    <a href="https://github.com/yashbhosale01/Project/tree/main/calculator" class="link-btn">GitHub Link</a>
+                </div>
+                </div>
+                <div class="project">
+                    <i class="fa-solid fa-temperature-low"></i>
+                    <div class="layer">
+                    <h3>Temperature Convertor</h3>
+                    <p>Experience seamless usability in a stylish interface for hassle-free temperature transformations.</p>
+                    <a href="https://github.com/yashbhosale01/Project/tree/main/Temprature%20coverter" class="link-btn">GitHub Link</a>
+                </div>
+                </div>
+                <div class="project">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <div class="layer">
+                    <h3>Landing Page</h3>
+                    <p>Let our user-friendly interface and captivating design inspire your wanderlust and turn your travel dreams into unforgettable experiences.</p>
+                    <a href="https://github.com/yashbhosale01/Project/tree/main/landing_page" class="link-btn">GitHub Link</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fas fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="yash-cv.pdf"download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
